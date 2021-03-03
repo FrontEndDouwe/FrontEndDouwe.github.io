@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+h1, h2, h3{
+  font-family: Open Sans, sans-serif;
+}
+
+i{
+  float: left;
+  padding: 40px;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("/images/mars.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+html{
+  font-family: Open Sans, sans-serif;
+}
+
+p{
+  font-weight: bold;
+  text-align: center;
+}
+
+header{
+  width: 100%;
+  text-align: center;
+  background-color: #C1440E;
+  font-family: Open Sans;
+}
+
+/* Styling voor telefoonscherm */
+@media only screen and (max-width: 600px){
+  body{
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    align-items: center;
+    height: 100%;
+  }
+
+  canvas{
+    max-height: 350px;
+  }
+
+  .chartContainer{
+    width: 350px;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 20px;
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .gridContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+
+/* Styling voor tablet */
+@media only screen and (min-width: 600px) and (max-width: 1280px){
+  body{
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    width: 100%;
+  }
+
+  canvas{
+    max-height: 400px;
+  }
+
+  .gridContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .chartContainer{
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 20px;
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    width: 500px;
+    max-height: 500px;
+  }
+}
+
+/* Styling voor desktopscherm */
+@media only screen and (min-width: 1280px){
+  canvas{
+    max-height: 400px;
+  }
+
+  .flexbox{
+    display: flex;
+    justify-content: center;
+  }
+
+  .chartContainer{
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 20px;
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    width: 350px;
+    max-height: 500px;
+  }
+
+  .gridContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  body{
+    height: 100%;
+    width: 100%;
+  }
+}

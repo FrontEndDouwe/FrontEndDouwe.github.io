@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=500, initial-scale=1">
+    <title> myChart </title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"> </script>
+    <script src="script/script.js"> </script>
+    <link rel="stylesheet" type="text/css" href="/style/style.css">
+  </head>
+  <body>
+    <header>
+      <h1> Dashboard ITS </h1>
+    </header>
+    <div class="flexbox">
+      <div class="gridContainer">
+        <div class="chartContainer" class="afstand">
+          <div class="title">
+            <p> Afgelegde afstand </p>
+          </div>
+          <canvas id="afstand">
+          </canvas>
+        </div>
+
+        <div class="chartContainer" class="snelheid">
+          <div class="title">
+            <p> Snelheid van het ruimteschip </p>
+          </div>
+          <canvas id="snelheid"></canvas>
+        </div>
+
+        <div class="chartContainer" class="chartContainer">
+          <div class="title">
+            <p> Afstand tot Mars</p>
+          </div>
+          <canvas id="afstandMars"></canvas>
+        </div>
+
+        <div class="chartContainer">
+          <div class="title">
+            <p> Percentage voedsel </p>
+          </div>
+          <canvas id="percentageVoedsel"></canvas>
+        </div>
+
+        <div class="chartContainer">
+          <div class="title">
+            <p> Percantage Water</p>
+          </div>
+          <canvas id="percentageWater"></canvas>
+        </div>
+
+        <div class="chartContainer">
+          <div class="title">
+            <p> Hoeveelheid voedsel en water</p>
+          </div>
+          <canvas id="foodwaterbar"></canvas>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
